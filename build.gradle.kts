@@ -27,11 +27,13 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:$springBootStarterVersion")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect:2.0.0")
+    implementation ("io.github.microutils:kotlin-logging-jvm:2.0.11")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools:$springBootStarterVersion")
 
     runtimeOnly("com.h2database:h2:2.2.224")
 
+    testImplementation("io.rest-assured:kotlin-extensions:5.5.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test:3.3.1")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.25")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.3")
